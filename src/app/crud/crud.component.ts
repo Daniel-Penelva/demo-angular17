@@ -26,6 +26,10 @@ export class CrudComponent {
     // cadastrar no vetor
     this.pessoas.push(this.formulario.value as Pessoa);
 
+     // Limpeza dos inputs
+    this.formulario.reset();
+
+
     // Visualização via console
     console.table(this.pessoas);
   }
