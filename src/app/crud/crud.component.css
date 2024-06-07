@@ -24,3 +24,21 @@ h1 {
     color: brown;
     font-style: italic;
   }
+
+  table {
+    width: 800px;
+    margin: 30px auto;
+  }
+  
+  th {
+    padding: 3px;
+    text-align: left;
+    width: 200px;
+    color: brown;
+  }
+  
+  td {
+    padding: 3px;
+    text-align: left;
+    width: 200px;
+  }
