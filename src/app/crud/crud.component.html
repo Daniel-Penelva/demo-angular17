@@ -1,5 +1,23 @@
 <h1>Formulário de Cadastro</h1>
 <form [formGroup] = "formulario">
+
+  <!-- Mensagens de Validação -->
+  @if (formulario.get('nome').hasError('required') && formulario.get('nome').touched) {
+    <p class="alert alert-danger">O campo nome precisa ser preenchido</p>
+  }@if (formulario.get('nome').hasError('minlength') && formulario.get('nome').touched) {
+    <p class="alert alert-danger">O campo nome precisa ter pelo menos dois caracteres</p>
+  }@if (formulario.get('idade').hasError('required') && formulario.get('idade').touched) {
+    <p class="alert alert-danger">O campo idade precisa ser preenchido.</p>
+  }@if (formulario.get('idade').hasError('min') && formulario.get('idade').touched) {
+    <p class="alert alert-danger">A idade mínima é 0.</p>
+  }@if (formulario.get('idade').hasError('max') && formulario.get('idade').touched) {
+    <p class="alert alert-danger">A idade máxima é 120.</p>
+  }@if (formulario.get('cidade').hasError('required') && formulario.get('cidade').touched) {
+    <p class="alert alert-danger">O campo cidade precisa ser preenchido.</p>
+  }@if (formulario.get('cidade').hasError('minLength') && formulario.get('cidade').touched) {
+    <p class="alert alert-danger">O campo cidade precisa ter pelo menos três caracteres.</p>
+  }
+
   <input
     type="text"
     name="nome"
@@ -46,8 +64,3 @@
     </tr>
   </tbody>
 </table>
-
-<p style="color: white;">Testando ReactiveFormsModule</p>
-<p style="color: white;">{{formulario.value.nome}}</p>
-<p style="color: white;">{{formulario.value.idade}}</p>
-<p style="color: white;">{{formulario.value.cidade}}</p>
