@@ -13,6 +13,7 @@ import { Pessoa } from '../model/Pessoa';
 export class CrudComponent {
 
   pessoas: Pessoa[] = [];
+  indice:number;
 
   formulario = new FormGroup({
     nome: new FormControl('', [Validators.required, Validators.minLength(2)]),
@@ -32,6 +33,20 @@ export class CrudComponent {
 
     // Visualização via console
     console.table(this.pessoas);
+  }
+
+  // Função de seleção de pessoa
+  selecionarPessoa(indice:number){
+
+    // Atribuir o índice da pessoa
+    this.indice = indice;
+
+    // Atribuir os dados da pessoa no formulário, ou seja, no momento que o usuario clica em selecionar vai atribuir esses valores no formulário
+    this.formulario.setValue({
+      nome: this.pessoas[indice].nome,
+      idade: this.pessoas[indice].idade,
+      cidade: this.pessoas[indice].cidade
+    });
   }
   
 }
