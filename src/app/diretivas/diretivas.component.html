@@ -22,3 +22,14 @@
 <ul>
     <li *ngFor="let item of cores; let i=index"> {{ i+1 }}. {{ item }}</li>
 </ul>
+
+<hr />
+
+<h1>Diretiva [ngSwitch]</h1>
+
+<div [ngSwitch]="linguagem">
+    <p *ngSwitchCase="'CSS'">Linguagem de estilo</p>
+    <p *ngSwitchCase="'HTML'">Linguagem de marcação</p>
+    <p *ngSwitchCase="'JS'">Linguagem JavaScript</p>
+    <p *ngSwitchDefault>Linguagem não encontrada</p>
+</div>

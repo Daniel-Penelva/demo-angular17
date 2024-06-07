@@ -22,6 +22,9 @@ export class DiretivasComponent {
   nomes: string[] = ['Pedro', 'Davi', 'José', 'Pablo'];
   cores: string[] = ['Laranja', 'Verde', 'Amarelo', 'Azul', 'Preto']
 
+  // Váriavel para exibir linguagem (Diretiva [ngSwitch])
+  linguagem: string = 'Java';
+
   constructor() {
     this.nome = 'Daniel penelva de Andrade';
   }
