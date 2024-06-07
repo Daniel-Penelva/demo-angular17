@@ -12,3 +12,18 @@
 }
 
 </div>
+
+<hr />
+
+<div>
+    
+<h1> control flow - Laço de repetição for </h1>
+
+@for (nome of nomes; track $index) {
+    <p> {{ $index + 1 }}. {{ nome }} </p>
+}@empty {
+    <p>Não existe nenhum nome registrado!</p>
+}
+
+<!-- Dica: Pode implementar o uso do comando @empty. Caso a estrutura de repetição não seja realizada, podemos retornar uma mensagem, estrutura bem interessante, caso o vetor não contenha registros -->
+</div>

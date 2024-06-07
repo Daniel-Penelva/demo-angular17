@@ -11,4 +11,7 @@ export class ControlFlowComponent {
   
   // Varíavel de média - control flow @if
   media: number = 9;
+
+  // Vetor - control flow @for
+  nomes: string[] = ['Daniel', 'Vanessa', 'Caio', 'Mariana'];
 }
