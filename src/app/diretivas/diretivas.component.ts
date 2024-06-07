@@ -25,6 +25,12 @@ export class DiretivasComponent {
   // Váriavel para exibir linguagem (Diretiva [ngSwitch])
   linguagem: string = 'Java';
 
+  // variável lógica (Diretiva [ngStyle])
+  condicao: boolean = true;
+
+  // Lista de aprovados e reprovados
+  situacao: string[] = ['Aprovado', 'Aprovado', 'Reprovado'];
+
   constructor() {
     this.nome = 'Daniel penelva de Andrade';
   }

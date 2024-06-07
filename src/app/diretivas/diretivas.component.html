@@ -33,3 +33,15 @@
     <p *ngSwitchCase="'JS'">Linguagem JavaScript</p>
     <p *ngSwitchDefault>Linguagem não encontrada</p>
 </div>
+
+<hr />
+
+<h1>Diretiva [ngStyle]</h1>
+
+<h3>Exemplo 1</h3>
+<h3 [ngStyle]="{'color':condicao ? 'green' : 'red'}"> Aprendendo a diretiva ngStyle </h3>
+
+<h3>Exemplo 2</h3>
+<ul>
+    <li *ngFor="let s of situacao" [ngStyle]="{'background-color': s == 'Aprovado' ? 'yellow' : 'green'}"> {{ s }} </li>
+</ul>
