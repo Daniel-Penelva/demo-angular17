@@ -14,4 +14,7 @@ export class ControlFlowComponent {
 
   // Vetor - control flow @for
   nomes: string[] = ['Daniel', 'Vanessa', 'Caio', 'Mariana'];
+
+  // linguagem - control flow @switch
+  linguagem: string = 'Java';
 }
