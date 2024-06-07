@@ -5,17 +5,18 @@ import { Component } from '@angular/core';
   standalone: true,
   imports: [],
   templateUrl: './componente01.component.html',
-  styleUrl: './componente01.component.css'
+  styleUrl: './componente01.component.css',
 })
 export class Componente01Component {
-
   // Variáveis
-  nome: string = 'Daniel';
-  sobrenome: string = 'Penelva de Andrade';
-  idade: number = 35;
+  lampadaAcessa: string = 'assets/img/lampada_acessa.jpg';
 
-  // Função para exibir uma mensagem
-  mensagem(){
-    alert("Nome Completo: " + this.nome + ' ' + this.sobrenome + " - Idade: " + this.idade);
+  // Função para alterar a lâmpada
+  alterarImagem() {
+    if (this.lampadaAcessa === 'assets/img/lampada_acessa.jpg') {
+      this.lampadaAcessa = 'assets/img/lampada_apagada.png';
+    } else {
+      this.lampadaAcessa = 'assets/img/lampada_acessa.jpg';
+    }
   }
 }
