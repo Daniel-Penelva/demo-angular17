@@ -1,0 +1,9 @@
+<h1>Reactive Forms</h1>
+
+<form [formGroup] = "formulario">
+    <input type="text" formControlName="name" placeholder="Entre com o nome">
+    <input type="text"  formControlName="city" placeholder="Entre com a cidade">
+</form>
+
+<p>{{ formulario.value.name }}</p>
+<p>{{ formulario.value.city }}</p>
