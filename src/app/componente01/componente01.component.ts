@@ -13,5 +13,9 @@ export class Componente01Component {
   nome: string = 'Daniel';
   sobrenome: string = 'Penelva de Andrade';
   idade: number = 35;
-  
+
+  // Função para exibir uma mensagem
+  mensagem(){
+    alert("Nome Completo: " + this.nome + ' ' + this.sobrenome + " - Idade: " + this.idade);
+  }
 }
