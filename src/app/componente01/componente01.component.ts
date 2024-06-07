@@ -9,4 +9,9 @@ import { Component } from '@angular/core';
 })
 export class Componente01Component {
 
+  // Variáveis
+  nome: string = 'Daniel';
+  sobrenome: string = 'Penelva de Andrade';
+  idade: number = 35;
+  
 }
