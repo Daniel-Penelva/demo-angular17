@@ -59,5 +59,15 @@ export class CrudComponent {
     // limpar os inputs de texto
     this.formulario.reset();
   }
+
+  // Função de remoção de Pessoa
+  removerPessoa(){
+
+    // Removendo pessoa do vetor
+    this.pessoas.splice(this.indice, 1);
+
+    // Limpeza dos inputs
+    this.formulario.reset();
+  }
   
 }
