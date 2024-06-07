@@ -48,5 +48,16 @@ export class CrudComponent {
       cidade: this.pessoas[indice].cidade
     });
   }
+
+
+  // Função de alteração de Pessoa
+  alterarPessoa(){
+
+    // alterar vetor de pessoa, ou seja, altera o registro de pessoa no vetor this.pessoas com base no índice this.indice, utilizando os dados do formulário.
+    this.pessoas[this.indice] = this.formulario.value as Pessoa;
+
+    // limpar os inputs de texto
+    this.formulario.reset();
+  }
   
 }
