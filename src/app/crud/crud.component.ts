@@ -69,5 +69,12 @@ export class CrudComponent {
     // Limpeza dos inputs
     this.formulario.reset();
   }
+
+
+  // Função de cancelamento para apagar os inputs de texto
+  apagar(){
+    // Limpeza dos inputs
+    this.formulario.reset();
+  }
   
 }

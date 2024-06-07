@@ -41,7 +41,7 @@
   <input type="button" value="Cadastrar" [disabled]="formulario.invalid" (click)="cadastrarPessoa()" class="btn btn-primary" />
   <input type="button" value="Alterar" [disabled]="formulario.invalid" (click)="alterarPessoa()" class="btn btn-warning" />
   <input type="button" value="Remover" [disabled]="formulario.invalid" (click)="removerPessoa()" class="btn btn-danger" />
-  <input type="button" value="Cancelar" class="btn btn-secondary" />
+  <input type="button" value="Cancelar" (click)="apagar()" class="btn btn-secondary" />
 </form>
 
 <table class="table table-striped">
