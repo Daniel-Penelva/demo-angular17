@@ -31,6 +31,10 @@ export class DiretivasComponent {
   // Lista de aprovados e reprovados
   situacao: string[] = ['Aprovado', 'Aprovado', 'Reprovado'];
 
+  isLogged: boolean = false;
+
+  nivel: number = 5;
+
   constructor() {
     this.nome = 'Daniel penelva de Andrade';
   }

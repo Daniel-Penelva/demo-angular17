@@ -54,3 +54,24 @@
 <ul>
     <li *ngFor="let s of situacao" [ngClass]="s == 'Aprovado' ? 'fonteVerde' : 'fonteVermelha'"> {{ s }} </li>
 </ul>
+
+<hr />
+
+<ng-container *ngIf="!isLogged; else logado">
+    <button (click)="isLogged = true">Iniciar Sessão</button>
+    <button>Registrar-se</button>
+    <button (click)="nivel = nivel + 1">Aumentar nível</button>
+    <button (click)="nivel = nivel - 1">Diminuir nível</button>
+</ng-container>
+
+<div>Mostrador de nível: {{ nivel }}</div>
+
+<!-- OBS. O 'logado' faz referencia a tag ng-template que vai simular um acesso logado a um template -->
+
+<ng-template #logado>
+    <button>Ir a administração</button>
+    <button>Ir ao meu perfil</button>
+    <button (click)="isLogged = false">Encerrar sessão</button>
+</ng-template>
+
+<button *ngIf="nivel>=10">Habitação VIP</button>
