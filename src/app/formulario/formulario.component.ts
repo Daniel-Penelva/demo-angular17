@@ -11,6 +11,11 @@ import { FormsModule } from '@angular/forms';
 export class FormularioComponent {
 
   nome: string = '';
+  cidade: string = '';
+
+  exibir(){
+    alert("Nome: " + this.nome + " - Cidade: " + this.cidade);
+  }
 }
 
 /* Para utilizar formulários em uma aplicação angular vai ser preciso importar o FormsModule. */

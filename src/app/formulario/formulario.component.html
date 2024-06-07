@@ -1,5 +1,7 @@
 
-<h1>Diretiva [(ngModel)]</h1>
+<form>
+    <input type="text" name="nome" [(ngModel)] = "nome" placeholder="Digite seu nome">
+    <input type="text" name="cidade" [(ngModel)] = "cidade" placeholder="Digite sua cidade">
 
-<input type="text" [(ngModel)]="nome" placeholder="Digite seu nome">
-<h1>{{ nome }}</h1>
+    <button (click)="exibir()">Cadastrar</button>
+</form>
