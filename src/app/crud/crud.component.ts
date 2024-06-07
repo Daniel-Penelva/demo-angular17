@@ -1,27 +1,19 @@
 import { Component } from '@angular/core';
+import { FormControl, FormGroup, ReactiveFormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-crud',
   standalone: true,
-  imports: [],
+  imports: [ReactiveFormsModule],
   templateUrl: './crud.component.html',
   styleUrl: './crud.component.css'
 })
 export class CrudComponent {
 
-  // Sem StrictNullChecks - - Não podemos criar variáveis sem especificar o valor.
-  // nome: string = 'Daniel' // Correto!
-  // nome: string = ''       // Correto!
-  // nome: string;           // Erro!
-  // idade: number = null;   // Erro!
-
-
-  // Com StrictNullChecks - Agora, podemos criar variáveis e não especificar o valor.
-  nome: string;
-  idade: number = null;
+  formulario = new FormGroup({
+    nome: new FormControl(''),
+    idade: new FormControl(null),
+    cidade: new FormControl(''),
+  });
+  
 }
-
-/* O strictNullChecks é uma opção do compilador TypeScript que ajuda a evitar bugs relacionados a valores null e undefined no código.
- * Para conseguirmos flexibilizar o uso de variáveis e objetos sem inicialização, basta procurar o arquivo tsconfig.json e adicione o comando:
- * "strictNullChecks": false.
-*/

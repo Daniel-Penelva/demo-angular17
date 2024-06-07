@@ -1,21 +1,24 @@
 <h1>Formulário de Cadastro</h1>
-<form>
+<form [formGroup] = "formulario">
   <input
     type="text"
     name="nome"
     placeholder="Entre com o nome"
+    formControlName="nome"
     class="form-control"
   />
   <input
     type="text"
     name="idade"
     placeholder="Entre com a idade"
+    formControlName="idade"
     class="form-control"
   />
   <input
     type="text"
     name="cidade"
     placeholder="Entre com a cidade"
+    formControlName="cidade"
     class="form-control"
   />
 
@@ -36,10 +39,15 @@
   </thead>
   <tbody>
     <tr>
-      <td>Daniel</td>
-      <td>34</td>
-      <td>RJ</td>
+      <td></td>
+      <td></td>
+      <td></td>
       <td><button class="btn btn-dark">Selecionar</button></td>
     </tr>
   </tbody>
 </table>
+
+<p style="color: white;">Testando ReactiveFormsModule</p>
+<p style="color: white;">{{formulario.value.nome}}</p>
+<p style="color: white;">{{formulario.value.idade}}</p>
+<p style="color: white;">{{formulario.value.cidade}}</p>
