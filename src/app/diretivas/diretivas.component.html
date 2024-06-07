@@ -45,3 +45,12 @@
 <ul>
     <li *ngFor="let s of situacao" [ngStyle]="{'background-color': s == 'Aprovado' ? 'yellow' : 'green'}"> {{ s }} </li>
 </ul>
+
+<hr />
+
+<h1>Diretiva [ngClass]</h1>
+
+<!-- A utilização dessa diretiva está condicionando as classes do CSS -->
+<ul>
+    <li *ngFor="let s of situacao" [ngClass]="s == 'Aprovado' ? 'fonteVerde' : 'fonteVermelha'"> {{ s }} </li>
+</ul>
