@@ -40,9 +40,9 @@
     class="form-control"
   />
 
-  <input type="button" value="Cadastrar" class="btn btn-primary" />
-  <input type="button" value="Alterar" class="btn btn-warning" />
-  <input type="button" value="Remover" class="btn btn-danger" />
+  <input type="button" value="Cadastrar" [disabled]="formulario.invalid" class="btn btn-primary" />
+  <input type="button" value="Alterar" [disabled]="formulario.invalid" class="btn btn-warning" />
+  <input type="button" value="Remover" [disabled]="formulario.invalid" class="btn btn-danger" />
   <input type="button" value="Cancelar" class="btn btn-secondary" />
 </form>
 
