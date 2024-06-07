@@ -18,6 +18,10 @@ export class DiretivasComponent {
   // varável para exibir nome
   nome: string;
 
+  // Vetor de nomes (Diretiva *ngFor)
+  nomes: string[] = ['Pedro', 'Davi', 'José', 'Pablo'];
+  cores: string[] = ['Laranja', 'Verde', 'Amarelo', 'Azul', 'Preto']
+
   constructor() {
     this.nome = 'Daniel penelva de Andrade';
   }

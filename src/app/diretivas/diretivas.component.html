@@ -7,3 +7,18 @@
 <hr />
 
 <div *ngIf="nome != null">O nome é {{ nome }}</div>
+
+<hr />
+
+<h1>Diretiva *ngFor</h1>
+
+<h3>Exemplo 1 - Acesso ao índice do item</h3>
+<ul>
+    <li *ngFor="let item of nomes; index as i"> Nome: {{item}} - indice: {{i}} </li>
+</ul>
+
+<!-- OBS. Outra forma de acesso ao indice i -->
+<h3>Exemplo 2 - Acesso ao índice do item</h3>
+<ul>
+    <li *ngFor="let item of cores; let i=index"> {{ i+1 }}. {{ item }}</li>
+</ul>
