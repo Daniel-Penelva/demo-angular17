@@ -2,21 +2,19 @@
 <form [formGroup] = "formulario">
 
   <!-- Mensagens de Validação -->
-  @if (formulario.get('nome').hasError('required') && formulario.get('nome').touched) {
-    <p class="alert alert-danger">O campo nome precisa ser preenchido</p>
-  }@if (formulario.get('nome').hasError('minlength') && formulario.get('nome').touched) {
-    <p class="alert alert-danger">O campo nome precisa ter pelo menos dois caracteres</p>
-  }@if (formulario.get('idade').hasError('required') && formulario.get('idade').touched) {
-    <p class="alert alert-danger">O campo idade precisa ser preenchido.</p>
-  }@if (formulario.get('idade').hasError('min') && formulario.get('idade').touched) {
-    <p class="alert alert-danger">A idade mínima é 0.</p>
-  }@if (formulario.get('idade').hasError('max') && formulario.get('idade').touched) {
-    <p class="alert alert-danger">A idade máxima é 120.</p>
-  }@if (formulario.get('cidade').hasError('required') && formulario.get('cidade').touched) {
-    <p class="alert alert-danger">O campo cidade precisa ser preenchido.</p>
-  }@if (formulario.get('cidade').hasError('minLength') && formulario.get('cidade').touched) {
-    <p class="alert alert-danger">O campo cidade precisa ter pelo menos três caracteres.</p>
-  }
+  <div *ngIf="formulario.get('nome').touched">
+    <p class="alert alert-danger" *ngIf="formulario.get('nome').hasError('required')">O campo nome precisa ser preenchido</p>
+    <p class="alert alert-danger" *ngIf="formulario.get('nome').hasError('minlength')">O campo nome precisa ter pelo menos dois caracteres</p>
+  </div>
+  <div *ngIf="formulario.get('idade').touched">
+    <p class="alert alert-danger" *ngIf="formulario.get('idade').hasError('required')">O campo idade precisa ser preenchido.</p>
+    <p class="alert alert-danger" *ngIf="formulario.get('idade').hasError('min')">A idade mínima é 0.</p>
+    <p class="alert alert-danger" *ngIf="formulario.get('idade').hasError('max')">A idade máxima é 120.</p>
+  </div>
+  <div *ngIf="formulario.get('cidade').touched">
+    <p class="alert alert-danger" *ngIf="formulario.get('cidade').hasError('required')">O campo cidade precisa ser preenchido.</p>
+    <p class="alert alert-danger" *ngIf="formulario.get('cidade').hasError('minlength')">O campo cidade precisa ter pelo menos três caracteres.</p>
+  </div>
 
   <input
     type="text"
