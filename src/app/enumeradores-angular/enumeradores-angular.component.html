@@ -1,0 +1,9 @@
+<div>
+    <h1>Controle de Acesso</h1>
+    <p>Nível de acesso atual: {{ accessLevel }}</p>
+    
+    <!-- setAccessLevel(AccessLevel level) - "level" representa o valor de parametro passado para acessar admin ou user ou guest, e eles são do tipo AccessLevel -->
+    <button (click)="setAccessLevel(AccessLevel.Admin)" class="btn btn-primary">Admin</button>
+    <button (click)="setAccessLevel(AccessLevel.User)" class="btn btn-danger">User</button>
+    <button (click)="setAccessLevel(AccessLevel.Guest)" class="btn btn-warning">Guest</button>
+</div>

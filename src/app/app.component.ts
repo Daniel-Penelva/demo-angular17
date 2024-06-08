@@ -9,13 +9,14 @@ import { FormularioReativoComponent } from "./formulario-reativo/formulario-reat
 import { CrudComponent } from "./crud/crud.component";
 import { ClasseAngularComponent } from './classe-angular/ClasseAngularComponent';
 import { InterfaceAngularComponent } from "./interface-angular/interface-angular.component";
+import { EnumeradoresAngularComponent } from "./enumeradores-angular/enumeradores-angular.component";
 
 @Component({
     selector: 'app-root',
     standalone: true,
     templateUrl: './app.component.html',
     styleUrls: ['./app.component.css'],
-    imports: [CommonModule, RouterOutlet, Componente01Component, DiretivasComponent, ControlFlowComponent, FormularioComponent, FormularioReativoComponent, CrudComponent, ClasseAngularComponent, InterfaceAngularComponent]
+    imports: [CommonModule, RouterOutlet, Componente01Component, DiretivasComponent, ControlFlowComponent, FormularioComponent, FormularioReativoComponent, CrudComponent, ClasseAngularComponent, InterfaceAngularComponent, EnumeradoresAngularComponent]
 })
 export class AppComponent {
   title = 'demo-angular17';
