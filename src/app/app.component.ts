@@ -7,13 +7,14 @@ import { ControlFlowComponent } from "./control-flow/control-flow.component";
 import { FormularioComponent } from "./formulario/formulario.component";
 import { FormularioReativoComponent } from "./formulario-reativo/formulario-reativo.component";
 import { CrudComponent } from "./crud/crud.component";
+import { ClasseAngularComponent } from './classe-angular/ClasseAngularComponent';
 
 @Component({
     selector: 'app-root',
     standalone: true,
     templateUrl: './app.component.html',
     styleUrls: ['./app.component.css'],
-    imports: [CommonModule, RouterOutlet, Componente01Component, DiretivasComponent, ControlFlowComponent, FormularioComponent, FormularioReativoComponent, CrudComponent]
+    imports: [CommonModule, RouterOutlet, Componente01Component, DiretivasComponent, ControlFlowComponent, FormularioComponent, FormularioReativoComponent, CrudComponent, ClasseAngularComponent]
 })
 export class AppComponent {
   title = 'demo-angular17';

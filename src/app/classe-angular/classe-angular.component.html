@@ -1,0 +1,29 @@
+<h1>Formulário de Cadastro</h1>
+<form [formGroup]="formulario">
+  <!-- Campos de entrada e mensagens de validação -->
+  <input type="text" name="nome" placeholder="Entre com o nome" formControlName="nome" class="form-control" />
+  <input type="number" name="idade" placeholder="Entre com a idade" formControlName="idade" class="form-control" />
+  <input type="text" name="profissao" placeholder="Entre com a profissão" formControlName="profissao" class="form-control" />
+
+  <input type="button" value="Cadastrar" *ngIf="formulario.valid" class="btn btn-primary" (click)="adicionarFuncionario()" />
+</form>
+
+<h1>Tabela de Funcionários</h1>
+
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th scope="col">Nome</th>
+      <th scope="col">Idade</th>
+      <th scope="col">Profissão</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let funcionario of funcionarios">
+      <td>{{ funcionario.nome }}</td>
+      <td>{{ funcionario.idade }}</td>
+      <td>{{ funcionario.profissao }}</td>
+    </tr>
+  </tbody>
+</table>
+
