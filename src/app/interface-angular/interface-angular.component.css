@@ -1,0 +1,24 @@
+h1{
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+form{
+    width: 700px;
+    display: contents;
+}
+
+
+/* Espaçamento geral mais uniforme - vai selecionar todos os elementos filhos diretos do formulário (form) que não são o último filho (not(:last-child))*/
+/* Aplicação do Espaçamento inferior: margin-bottom: 15px - cria um espaçamento inferior de 15px entre os campos  de entrada e os botões, exceto o último elemento*/
+form > *:not(:last-child) {
+    margin-bottom: 15px;
+}
+
+table{
+    width: 100%;
+    margin-bottom : .5em;
+    table-layout: fixed;
+    text-align: center;
+}

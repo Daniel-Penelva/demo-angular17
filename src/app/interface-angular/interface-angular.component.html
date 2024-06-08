@@ -1,0 +1,27 @@
+<h1>Formulário de Cadastro</h1>
+<form [formGroup]="formulario">
+  <!-- campos e validações -->
+  <input type="text" name="nome" placeholder="Entre com o nome" formControlName="nome" class="form-control" />
+  <input type="number" name="idade" placeholder="Entre com a idade" formControlName="idade" class="form-control" />
+  <input type="text" name="cidade" placeholder="Entre com a cidade" formControlName="cidade" class="form-control" />
+
+  <input type="button" value="Cadastrar" *ngIf="formulario.valid" class="btn btn-primary" (click)="adicionarUsuario()" />
+</form>
+
+<table class="table table-striped">
+  <thead>
+    <tr>
+      <th scope="col">Nome</th>
+      <th scope="col">Idade</th>
+      <th scope="col">Cidade</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let usuario of usuarios">
+      <td>{{ usuario.nome }}</td>
+      <td>{{ usuario.idade }}</td>
+      <td>{{ usuario.cidade }}</td>
+    </tr>
+  </tbody>
+</table>
+
