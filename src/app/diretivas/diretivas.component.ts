@@ -1,10 +1,11 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-diretivas',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, FormsModule],
   templateUrl: './diretivas.component.html',
   styleUrl: './diretivas.component.css',
 })
@@ -35,8 +36,15 @@ export class DiretivasComponent {
 
   nivel: number = 5;
 
+  // variavel seleccion - Exemplo diretiva [(ngModel)] - IMPORTANTE: Para utilizar a diretiva ngModel tem que importar o FormsModule.
+  seleccion: string = 'Toyota';
+
   constructor() {
     this.nome = 'Daniel penelva de Andrade';
+  }
+
+  onSelectChange(event: any){
+    console.log('Carro Selecionado: ', this.seleccion);
   }
 
   exibirQuadrado() {

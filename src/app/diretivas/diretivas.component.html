@@ -75,3 +75,15 @@
 </ng-template>
 
 <button *ngIf="nivel>=10">Habitação VIP</button>
+
+<hr />
+
+<h1>Diretiva [(ngModel)]</h1>
+
+<h2>Carro selecionado: {{ seleccion }}</h2>
+
+<select [(ngModel)]="seleccion" (change)="onSelectChange($event)">
+    <option value="Hyundai">Hyundai</option>
+    <option value="Toyota">Toyota</option>
+    <option value="Honda">Honda</option>
+</select>
