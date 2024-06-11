@@ -1,0 +1,9 @@
+<h2>Lista de Clientes</h2>
+
+<ul>
+    <li *ngFor="let cliente of clientes" (click)="onSelected(cliente)">
+        Nome Completo: {{ cliente.nome }} {{ cliente.sobrenome }} - Idade: {{cliente.idade}} - Cidade: {{ cliente.cidade }} - Email: {{ cliente.email }}
+    </li>
+</ul>
+
+<app-componente-filho *ngIf="selectedCliente" [cliente]="selectedCliente" (clienteChange)="onUpdate($event)"></app-componente-filho>

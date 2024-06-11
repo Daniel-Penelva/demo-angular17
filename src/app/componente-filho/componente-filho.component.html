@@ -1,0 +1,29 @@
+<h2>Detalhes do Cliente</h2>
+<div>
+    <label>Nome:
+        <input [(ngModel)] = "cliente.nome">
+    </label>
+</div>
+<div>
+    <label>Sobrenome:
+        <input [(ngModel)] = "cliente.sobrenome">
+    </label>
+</div>
+<div>
+    <label>Cidade:
+        <input [(ngModel)] = "cliente.cidade">
+    </label>
+</div>
+<div>
+    <label>Idade:
+        <input [(ngModel)] = "cliente.idade">
+    </label>
+</div>
+<div>
+    <label>Email:
+        <input [(ngModel)] = "cliente.email">
+    </label>
+</div>
+<div>
+    <button (click)="onEdit()">Salvar</button>
+</div>
