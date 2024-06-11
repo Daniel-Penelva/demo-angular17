@@ -15,13 +15,15 @@ import { EventBindingComponent } from "./event-binding/event-binding.component";
 import { UserListComponentComponent } from "./user-list-component/user-list-component.component";
 import { ParentComponentComponent } from "./parent-component/parent-component.component";
 import { ChildComponentComponent } from "./child-component/child-component.component";
+import { FilhoComponent } from "./filho/filho.component";
+import { PaiComponent } from "./pai/pai.component";
 
 @Component({
     selector: 'app-root',
     standalone: true,
     templateUrl: './app.component.html',
     styleUrls: ['./app.component.css'],
-    imports: [CommonModule, RouterOutlet, Componente01Component, DiretivasComponent, ControlFlowComponent, FormularioComponent, FormularioReativoComponent, CrudComponent, ClasseAngularComponent, InterfaceAngularComponent, EnumeradoresAngularComponent, ModeloEntidadesComponent, EventBindingComponent, UserListComponentComponent, ParentComponentComponent, ChildComponentComponent]
+    imports: [CommonModule, RouterOutlet, Componente01Component, DiretivasComponent, ControlFlowComponent, FormularioComponent, FormularioReativoComponent, CrudComponent, ClasseAngularComponent, InterfaceAngularComponent, EnumeradoresAngularComponent, ModeloEntidadesComponent, EventBindingComponent, UserListComponentComponent, ParentComponentComponent, ChildComponentComponent, FilhoComponent, PaiComponent]
 })
 export class AppComponent {
   title = 'demo-angular17';
