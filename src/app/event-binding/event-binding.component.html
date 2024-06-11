@@ -1,0 +1,60 @@
+
+<div>
+    <h1>Exemplo 1 - Event Binding (click)</h1>
+
+    <input type="text" [(ngModel)] = "nome" placeholder="Entre com o nome">
+    <button (click)="atualizarMensagem()">Clique Aqui</button>
+    <p>{{ mensagem }}</p>
+</div>
+
+<hr />
+
+<div>
+    <h1>Exemplo 2 - Event Binding (input)</h1>
+    <input type="text" (input)="atualizarTexto($event)" placeholder="Digite algo aqui">
+    <p>Você digitou: {{ texto }}</p>
+</div>
+
+<hr />
+
+<div>
+    <h1>Exemplo 3 - Event Binding (change)</h1>
+    <select [(ngModel)]="seleccion" (change)="onSelectChange($event)">
+        <option value="Maça">Maça</option>
+        <option value="Uva">Uva</option>
+        <option value="Morango">Morango</option>
+    </select>
+    <p>Você selecionou: {{ seleccion }}</p>
+</div>
+
+<hr />
+
+<div>
+    <h1>Exemplo 4 - Event Binding (dbclick)</h1>
+    <p (dblclick)="mudarCor()" [style.color]="cor">
+        Dê um duplo clique neste texto para mudar sua cor!
+    </p>
+</div>
+
+<hr />
+
+<div>
+    <h1>Exemplo 5 - Event Binding (keydown)</h1>
+    <input type="text" (keydown)="registrarTecla($event)" placeholder="Pressione qualquer tecla">
+    <p>Última tecla pressionada: {{ ultimaTecla }}</p>
+</div>
+
+<hr />
+
+<div>
+    <h1>Exemplo 6 - Event Binding (submit)</h1>
+    <form #formulario="ngForm" (ngSubmit)="onSubmit(formulario.value)">
+        <label for="marca">Marca do Carro:</label>
+        <input type="text" id="marca" name="marcaCarro" ngModel>
+      
+        <label for="modelo">Modelo do Carro:</label>
+        <input type="text" id="modelo" name="modeloCarro" ngModel>
+      
+        <button type="submit">Enviar</button>
+    </form>      
+</div>

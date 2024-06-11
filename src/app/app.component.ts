@@ -11,13 +11,14 @@ import { ClasseAngularComponent } from './classe-angular/ClasseAngularComponent'
 import { InterfaceAngularComponent } from "./interface-angular/interface-angular.component";
 import { EnumeradoresAngularComponent } from "./enumeradores-angular/enumeradores-angular.component";
 import { ModeloEntidadesComponent } from "./modelo-entidades/modelo-entidades.component";
+import { EventBindingComponent } from "./event-binding/event-binding.component";
 
 @Component({
     selector: 'app-root',
     standalone: true,
     templateUrl: './app.component.html',
     styleUrls: ['./app.component.css'],
-    imports: [CommonModule, RouterOutlet, Componente01Component, DiretivasComponent, ControlFlowComponent, FormularioComponent, FormularioReativoComponent, CrudComponent, ClasseAngularComponent, InterfaceAngularComponent, EnumeradoresAngularComponent, ModeloEntidadesComponent]
+    imports: [CommonModule, RouterOutlet, Componente01Component, DiretivasComponent, ControlFlowComponent, FormularioComponent, FormularioReativoComponent, CrudComponent, ClasseAngularComponent, InterfaceAngularComponent, EnumeradoresAngularComponent, ModeloEntidadesComponent, EventBindingComponent]
 })
 export class AppComponent {
   title = 'demo-angular17';
