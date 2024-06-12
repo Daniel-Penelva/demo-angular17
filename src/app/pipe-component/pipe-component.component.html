@@ -1,0 +1,22 @@
+<h1>Exemplo 1- DatePipe</h1>
+<p>{{ hoje | date: 'fullDate' }}</p>
+<p>{{ hoje | date: 'shortTime' }}</p>
+<p>{{ hoje | date: 'dd/MM/yyyy' }}</p>
+
+<hr />
+
+<h1>Exemplo 2 - UpperCasePipe e LowerCasePipe</h1>
+<p>Nome completo: {{ nomeCompleto | uppercase }}</p>
+<p>Nome completo: {{ nomeCompleto | lowercase }}</p>
+
+<hr />
+
+<h1>Exemplo 3 - CurrencyPipe</h1>
+<p>Nome completo: {{ preco | currency:'USD' }}</p>
+<p>Nome completo: {{ preco | currency:'EUR':'symbol-narrow' }}</p>
+<p>Nome completo: {{ preco | currency:'BRL' }}</p>
+
+<hr />
+
+<h1>Exemplo 4 - PercentPipe</h1>
+<p>{{ ratio | percent }}</p>
