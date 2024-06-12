@@ -18,13 +18,14 @@ import { ChildComponentComponent } from "./child-component/child-component.compo
 import { FilhoComponent } from "./filho/filho.component";
 import { PaiComponent } from "./pai/pai.component";
 import { ComponentePaiComponent } from "./componente-pai/componente-pai.component";
+import { SintaxeEspalhamentoComponent } from "./sintaxe-espalhamento/sintaxe-espalhamento.component";
 
 @Component({
     selector: 'app-root',
     standalone: true,
     templateUrl: './app.component.html',
     styleUrls: ['./app.component.css'],
-    imports: [CommonModule, RouterOutlet, Componente01Component, DiretivasComponent, ControlFlowComponent, FormularioComponent, FormularioReativoComponent, CrudComponent, ClasseAngularComponent, InterfaceAngularComponent, EnumeradoresAngularComponent, ModeloEntidadesComponent, EventBindingComponent, UserListComponentComponent, ParentComponentComponent, ChildComponentComponent, FilhoComponent, PaiComponent, ComponentePaiComponent]
+    imports: [CommonModule, RouterOutlet, Componente01Component, DiretivasComponent, ControlFlowComponent, FormularioComponent, FormularioReativoComponent, CrudComponent, ClasseAngularComponent, InterfaceAngularComponent, EnumeradoresAngularComponent, ModeloEntidadesComponent, EventBindingComponent, UserListComponentComponent, ParentComponentComponent, ChildComponentComponent, FilhoComponent, PaiComponent, ComponentePaiComponent, SintaxeEspalhamentoComponent]
 })
 export class AppComponent {
   title = 'demo-angular17';
