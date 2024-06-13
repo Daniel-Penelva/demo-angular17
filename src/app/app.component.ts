@@ -24,13 +24,14 @@ import { PipePersonalizadoComponent } from "./pipe-personalizado/pipe-personaliz
 import { ObservableComponenteComponent } from "./observable-componente/observable-componente.component";
 import { ObservableComponente2Component } from "./observable-componente2/observable-componente2.component";
 import { ObservableComponente3Component } from "./observable-componente3/observable-componente3.component";
+import { ObservableComponente4Component } from "./observable-componente4/observable-componente4.component";
 
 @Component({
     selector: 'app-root',
     standalone: true,
     templateUrl: './app.component.html',
     styleUrls: ['./app.component.css'],
-    imports: [CommonModule, RouterOutlet, Componente01Component, DiretivasComponent, ControlFlowComponent, FormularioComponent, FormularioReativoComponent, CrudComponent, ClasseAngularComponent, InterfaceAngularComponent, EnumeradoresAngularComponent, ModeloEntidadesComponent, EventBindingComponent, UserListComponentComponent, ParentComponentComponent, ChildComponentComponent, FilhoComponent, PaiComponent, ComponentePaiComponent, SintaxeEspalhamentoComponent, PipeComponentComponent, PipePersonalizadoComponent, ObservableComponenteComponent, ObservableComponente2Component, ObservableComponente3Component]
+    imports: [CommonModule, RouterOutlet, Componente01Component, DiretivasComponent, ControlFlowComponent, FormularioComponent, FormularioReativoComponent, CrudComponent, ClasseAngularComponent, InterfaceAngularComponent, EnumeradoresAngularComponent, ModeloEntidadesComponent, EventBindingComponent, UserListComponentComponent, ParentComponentComponent, ChildComponentComponent, FilhoComponent, PaiComponent, ComponentePaiComponent, SintaxeEspalhamentoComponent, PipeComponentComponent, PipePersonalizadoComponent, ObservableComponenteComponent, ObservableComponente2Component, ObservableComponente3Component, ObservableComponente4Component]
 })
 export class AppComponent {
   title = 'demo-angular17';
