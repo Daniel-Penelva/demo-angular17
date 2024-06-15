@@ -28,13 +28,50 @@ import { ObservableComponente4Component } from "./observable-componente4/observa
 import { ObservableComponente5Component } from "./observable-componente5/observable-componente5.component";
 import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
+import { AdminComponent } from './admin/admin.component';
+import { AdminDashboardComponent } from './admin-dashboard/admin-dashboard.component';
+import { AdminUsersComponent } from './admin-users/admin-users.component';
 
 @Component({
     selector: 'app-root',
     standalone: true,
     templateUrl: './app.component.html',
     styleUrls: ['./app.component.css'],
-    imports: [CommonModule, RouterOutlet, Componente01Component, DiretivasComponent, ControlFlowComponent, FormularioComponent, FormularioReativoComponent, CrudComponent, ClasseAngularComponent, InterfaceAngularComponent, EnumeradoresAngularComponent, ModeloEntidadesComponent, EventBindingComponent, UserListComponentComponent, ParentComponentComponent, ChildComponentComponent, FilhoComponent, PaiComponent, ComponentePaiComponent, SintaxeEspalhamentoComponent, PipeComponentComponent, PipePersonalizadoComponent, ObservableComponenteComponent, ObservableComponente2Component, ObservableComponente3Component, ObservableComponente4Component, ObservableComponente5Component, HomeComponent, AboutComponent, RouterModule]
+    imports: [
+      CommonModule, 
+      RouterOutlet, 
+      Componente01Component, 
+      DiretivasComponent, 
+      ControlFlowComponent, 
+      FormularioComponent, 
+      FormularioReativoComponent, 
+      CrudComponent, 
+      ClasseAngularComponent, 
+      InterfaceAngularComponent, 
+      EnumeradoresAngularComponent, 
+      ModeloEntidadesComponent, 
+      EventBindingComponent, 
+      UserListComponentComponent, 
+      ParentComponentComponent, 
+      ChildComponentComponent, 
+      FilhoComponent, 
+      PaiComponent, 
+      ComponentePaiComponent, 
+      SintaxeEspalhamentoComponent, 
+      PipeComponentComponent, 
+      PipePersonalizadoComponent, 
+      ObservableComponenteComponent, 
+      ObservableComponente2Component, 
+      ObservableComponente3Component, 
+      ObservableComponente4Component, 
+      ObservableComponente5Component, 
+      HomeComponent, 
+      AboutComponent, 
+      RouterModule, 
+      AdminComponent, 
+      AdminDashboardComponent, 
+      AdminUsersComponent
+    ]
 })
 export class AppComponent {
   title = 'demo-angular17';
