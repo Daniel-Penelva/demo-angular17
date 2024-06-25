@@ -1,0 +1,72 @@
+<h1>Vetor de números</h1>
+
+@for (n of numeros; track $index) {
+<p>{{ $index }} - {{ n }}</p>
+}
+
+<hr />
+
+<h1>Vetor de strings</h1>
+
+@for (fruta of frutas; track $index) {
+<p>{{ $index }} - {{ fruta }}</p>
+}
+
+<hr />
+
+<h1>Vetor de booleans</h1>
+
+@for (b of booleans; track $index) {
+<p>{{ $index }} - {{ b }}</p>
+}
+
+<hr />
+
+<h1>Vetor de vetores</h1>
+
+@for (arrays of arraysOfArrays; track $index) {
+<p>{{ $index }} - {{ arrays }}</p>
+}
+
+<hr />
+
+<h1>Vetor de qualquer tipo (any)</h1>
+
+@for (m of mixedArray; track $index) {
+<p>{{ $index }} - {{ m }}</p>
+}
+
+<hr />
+
+<h1>Vetor de tipo genérico</h1>
+
+<p>Exemplo 1</p>
+@for (numero of numberArray; track $index) {
+<p>{{ $index }} - {{ numero }}</p>
+}
+
+<p>Exemplo 2</p>
+@for (strings of stringArray; track $index) {
+<p>{{ $index }} - {{ strings }}</p>
+}
+
+<hr />
+
+<h1>Vetor de objetos</h1>
+
+@for (c of clientes; track $index) {
+<p>
+  Indice: {{ $index }} - Id: {{ c.id }} - Nome: {{ c.nome }} + Sobrenome: +
+  {{ c.sobrenome }} + Idade: {{ c.idade }} + Email: {{ c.email }}
+</p>
+}
+
+<hr />
+
+<h1>Vetor de Enum</h1>
+
+<ng-container *ngFor="let a of acessLevel">
+    <div>
+      {{ AccessLevel[a] }} ({{ a }})
+    </div>
+</ng-container>
