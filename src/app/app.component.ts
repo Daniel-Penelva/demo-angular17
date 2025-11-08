@@ -35,6 +35,8 @@ import { TiposVetoresComponent } from "./tipos-vetores/tipos-vetores.component";
 import { ComponentePersonalizadoComponent } from "./componentes/ex1_componente_personalizado/componente-personalizado/componente-personalizado.component";
 import { ComponentPaiComponent } from "./componentes/ex2_componente_personalizado/component-pai/component-pai.component";
 import { ExemploService1Component } from "./componentes/ex3_utilizando_service/exemplo-service1/exemplo-service1.component";
+import { CicloDeVidaComponent } from "./componentes/ex4_ciclo_de_vida/ciclo-de-vida/ciclo-de-vida.component";
+import { CicloDeVidaPaiComponent } from "./componentes/ex4_ciclo_de_vida/ciclo-de-vida-pai/ciclo-de-vida-pai.component";
 
 @Component({
     selector: 'app-root',
@@ -78,7 +80,9 @@ import { ExemploService1Component } from "./componentes/ex3_utilizando_service/e
     TiposVetoresComponent,
     ComponentePersonalizadoComponent,
     ComponentPaiComponent,
-    ExemploService1Component
+    ExemploService1Component,
+    CicloDeVidaComponent,
+    CicloDeVidaPaiComponent
 ]
 })
 export class AppComponent {
