@@ -1,0 +1,24 @@
+<h1>Exemplo1: Integrando o componente Filho no componente Pai </h1>
+
+<h2>Componente Pai</h2>
+
+<p>Profissão: {{ profissao }}</p>
+
+<app-component-filho
+  [nome]="'João'"
+  [sobrenome]="'Silva'"
+  [idade]="30"
+  [ativo]="true" #filho></app-component-filho>
+
+<!--=================================================================-->
+
+<h1>Exemplo2: Utilizando uma variável de template </h1>
+
+<p>Nome Completo: {{ filho.nome }}  {{ filho.sobrenome }}</p>
+<p>Idade: {{ filho.idade }}</p>
+<p>Status: {{ filho.ativo ? 'Ativo' : 'Inativo' }}</p>
+
+<!--=================================================================-->
+<!-- Exemplo 3 - Imprimindo Resultado do Exemplo Output() -->
+
+<app-component-filho (imprimirCarro) = "carro($event)"></app-component-filho>

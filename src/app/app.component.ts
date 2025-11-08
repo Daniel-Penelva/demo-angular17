@@ -33,6 +33,7 @@ import { AdminDashboardComponent } from './admin-dashboard/admin-dashboard.compo
 import { AdminUsersComponent } from './admin-users/admin-users.component';
 import { TiposVetoresComponent } from "./tipos-vetores/tipos-vetores.component";
 import { ComponentePersonalizadoComponent } from "./componentes/ex1_componente_personalizado/componente-personalizado/componente-personalizado.component";
+import { ComponentPaiComponent } from "./componentes/ex2_componente_personalizado/component-pai/component-pai.component";
 
 @Component({
     selector: 'app-root',
@@ -74,7 +75,8 @@ import { ComponentePersonalizadoComponent } from "./componentes/ex1_componente_p
     AdminDashboardComponent,
     AdminUsersComponent,
     TiposVetoresComponent,
-    ComponentePersonalizadoComponent
+    ComponentePersonalizadoComponent,
+    ComponentPaiComponent
 ]
 })
 export class AppComponent {

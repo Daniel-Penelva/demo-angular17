@@ -1,0 +1,18 @@
+<h1>Componente Filho</h1>
+
+<p>Nome Completo: {{ nome }} {{ sobrenome }}</p>
+<p>Idade: {{ idade }}</p>
+<p>Status: {{ ativo ? 'Ativo' : 'Inativo' }}</p>
+
+<!--=================================================================-->
+
+
+<h1>Exemplo3: Utilizando Output() </h1>
+
+<label for="marca">Marca do Carro</label>
+<input type="text" id="marca" [(ngModel)]="marcaCarro">
+
+<label for="modelo">Modelo do Carro</label>
+<input type="text" id="modelo" [(ngModel)]="modeloCarro">
+
+<button type="button" (click)="imprimirCarro.emit(marcaCarro + ' ' + modeloCarro)">Mostrar Carro</button>
