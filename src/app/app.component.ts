@@ -37,6 +37,9 @@ import { ComponentPaiComponent } from "./componentes/ex2_componente_personalizad
 import { ExemploService1Component } from "./componentes/ex3_utilizando_service/exemplo-service1/exemplo-service1.component";
 import { CicloDeVidaComponent } from "./componentes/ex4_ciclo_de_vida/ciclo-de-vida/ciclo-de-vida.component";
 import { CicloDeVidaPaiComponent } from "./componentes/ex4_ciclo_de_vida/ciclo-de-vida-pai/ciclo-de-vida-pai.component";
+import { CardComponent } from "./componentes/ex5_ngStyle/card/card.component";
+import { ComponenteEx1Component } from "./componentes/ex5_ngStyle/componente-ex1/componente-ex1.component";
+import { ComponenteEx2Component } from "./componentes/ex5_ngStyle/componente-ex2/componente-ex2.component";
 
 @Component({
     selector: 'app-root',
@@ -82,7 +85,10 @@ import { CicloDeVidaPaiComponent } from "./componentes/ex4_ciclo_de_vida/ciclo-d
     ComponentPaiComponent,
     ExemploService1Component,
     CicloDeVidaComponent,
-    CicloDeVidaPaiComponent
+    CicloDeVidaPaiComponent,
+    CardComponent,
+    ComponenteEx1Component,
+    ComponenteEx2Component
 ]
 })
 export class AppComponent {
