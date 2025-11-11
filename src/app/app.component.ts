@@ -40,6 +40,7 @@ import { CicloDeVidaPaiComponent } from "./componentes/ex4_ciclo_de_vida/ciclo-d
 import { CardComponent } from "./componentes/ex5_ngStyle/card/card.component";
 import { ComponenteEx1Component } from "./componentes/ex5_ngStyle/componente-ex1/componente-ex1.component";
 import { ComponenteEx2Component } from "./componentes/ex5_ngStyle/componente-ex2/componente-ex2.component";
+import { PaginaInicialComponent } from "./componentes/ex6_rotas/pagina-inicial/pagina-inicial.component";
 
 @Component({
     selector: 'app-root',
@@ -88,7 +89,8 @@ import { ComponenteEx2Component } from "./componentes/ex5_ngStyle/componente-ex2
     CicloDeVidaPaiComponent,
     CardComponent,
     ComponenteEx1Component,
-    ComponenteEx2Component
+    ComponenteEx2Component,
+    PaginaInicialComponent
 ]
 })
 export class AppComponent {
